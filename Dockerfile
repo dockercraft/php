@@ -28,6 +28,9 @@ RUN apk add --update php-fpm@php \
 		php-bcmath@php \
 		&& rm -rf /var/cache/apk/*
 
+RUN set -x \
+	&& addgroup -g 82 -S www-data \
+	&& adduser -u 82 -D -S -G www-data www-data
 
 EXPOSE 9000-9010
 
