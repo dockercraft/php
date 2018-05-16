@@ -26,5 +26,7 @@ RUN apk add --update php7-cli@php \
 		php7-mcrypt@php \
 		php-mbstring@php \
 		php-bcmath@php \
+		php-json@php \
+		php-phar@php \
 		&& rm -rf /var/cache/apk/*
 
