@@ -28,5 +28,6 @@ RUN apk add --update php7-cli@php \
 		php-bcmath@php \
 		php-json@php \
 		php-phar@php \
-		&& rm -rf /var/cache/apk/*
+		&& rm -rf /var/cache/apk/* \
+		&& echo "memory_limit = -1" > /etc/php7/conf.d/99-overrides.ini
 
