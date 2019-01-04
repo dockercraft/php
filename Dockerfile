@@ -3,13 +3,13 @@ MAINTAINER Dockercraft <daniel@topdevbox.com>
 
 LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="PHP" \
-    org.label-schema.description="alpine3.8, php7-7.2.13-r0" \
+    org.label-schema.description="alpine3.8, perl-5.26.3-r0, php7-7.2.13-r0" \
     org.label-schema.url="https://github.com/dockercraft/php" \
     org.label-schema.vendor="Dockercraft (daniel@topdevbox.com)" \
     org.label-schema.license="GPLv2" \
     org.label-schema.build-date="20190104"
 
-RUN apk add --update bash \
+RUN apk add --update bash perl \
 		ca-certificates \
 		php7-cli \
 		php7-fpm \
