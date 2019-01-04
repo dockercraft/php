@@ -9,7 +9,7 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.license="GPLv2" \
     org.label-schema.build-date="20190104"
 
-RUN apk add --update bash perl \
+RUN apk add --update bash perl bc \
 		ca-certificates \
 		php7-cli \
 		php7-fpm \
