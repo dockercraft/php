@@ -7,7 +7,7 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.url="https://github.com/dockercraft/php" \
     org.label-schema.vendor="Dockercraft (daniel@topdevbox.com)" \
     org.label-schema.license="GPLv2" \
-    org.label-schema.build-date="20190104"
+    org.label-schema.build-date="20190107"
 
 RUN apk add --update bash perl bc \
 		ca-certificates \
@@ -16,6 +16,7 @@ RUN apk add --update bash perl bc \
 		php7-common \
 		php7-curl \
 		php7-gd \
+		php7-bz2 \
 		php7-mysqlnd \
 		php7-imap \
 		php7-pdo_mysql \
