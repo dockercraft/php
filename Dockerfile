@@ -35,5 +35,16 @@ RUN apk add --update bash perl bc \
 		php7-iconv \
 		php7-redis \
 		php7-xdebug \
+		php7-ctype \
+		php7-openssl \
+		php7-opcache \
+		php7-yaml \
+		php7-zip \
+		php7-pdo_pgsql \
+		php7-soap \
+		php7-ldap \
+		php7-oauth \
+		php7-mongodb \
+		php7-memcached \
 		php7-session && \ 
 		rm -rf /var/cache/apk/*
